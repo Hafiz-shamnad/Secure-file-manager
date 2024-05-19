@@ -16,7 +16,7 @@ This is a secure file storage system implemented using Flask for the web interfa
    ```
 
 3. Set up the secret key:
-   Replace the placeholder `rIy6DXBU5MqJj6HrKix2MuzkG25SXNfjBsGwSvFZw0Y=` in `app.py` with your actual secret key.
+   Replace the placeholder `your_secret_key` in `app.py Line 16` with your actual secret key.
 
 ## Usage
 1. Run the application:
