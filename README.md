@@ -1,10 +1,10 @@
 
-```markdown
-# Secure File Storage System
 
-## Introduction
+## Secure File Storage System
+
+# Introduction
 This is a secure file storage system implemented using Flask for the web interface and cryptography for file encryption and decryption. Users can upload files, which are then encrypted before being stored on the server. Upon download, the files are decrypted and made available to the user.
-
+```markdown
 ## Installation
 1. Clone the repository:
    ```bash
