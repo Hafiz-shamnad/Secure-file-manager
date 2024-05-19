@@ -6,7 +6,7 @@ This is a secure file storage system implemented using Flask for the web interfa
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone <repository_url>
+   git clone [<repository_url>](https://github.com/Hafiz-shamnad/Secure-file-manager.git)
    cd secure_file_storage
    ```
 
