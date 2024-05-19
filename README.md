@@ -6,7 +6,7 @@ Secure File Storage System is a web application built using Flask and cryptograp
 ## **Installation**
 1. **Clone the repository:**
    ```bash
-   git clone 
+   git clone https://github.com/Hafiz-shamnad/Secure-file-manager.git
    cd secure_file_storage
    ```
 
