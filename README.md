@@ -47,4 +47,4 @@ Secure File Storage System is a web application built using Flask and cryptograp
 - cryptography: 36.0.0
 
 ## **License**
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License. See the LICENSE file for details.
