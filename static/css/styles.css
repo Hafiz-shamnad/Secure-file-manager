@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', 'Roboto', sans-serif;
     background-image: url("/static/img/bg.jpg");
     background-size: cover;
     color: #ffffff;
@@ -8,6 +10,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
+    backdrop-filter: blur(2px);
 }
 
 .container {
@@ -16,19 +19,23 @@ body {
     padding: 20px;
     margin-top: 50px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
 }
 
-h1, h2 {
+h1,
+h2 {
     font-family: 'Poppins', sans-serif;
 }
 
-.btn-primary, .btn-secondary {
+.btn-primary,
+.btn-secondary {
     border-radius: 50px;
     padding: 10px 20px;
     font-size: 16px;
 }
 
-.form-control, .form-control-file {
+.form-control,
+.form-control-file {
     border-radius: 20px;
 }
 
@@ -45,4 +52,423 @@ h1, h2 {
 
 .list-group-item a:hover {
     text-decoration: underline;
+}
+
+.background {
+    width: 430px;
+    height: 520px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+}
+
+.background .shape {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    border-radius: 50%;
+    align-items: center;
+}
+
+.shape:first-child {
+    background: linear-gradient(#1845ad,
+            #23a2f6);
+    left: -80px;
+    top: -80px;
+}
+
+.shape:last-child {
+    background: linear-gradient(to right,
+            #ff512f,
+            #f09819);
+    right: -30px;
+    bottom: -80px;
+}
+
+.login-form {
+    height: 520px;
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.13);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+    padding: 50px 35px;
+}
+
+.login-form * {
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+
+.login-form h3 {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+input {
+    display: block;
+    height: 50px;
+    width: 100%;
+    /* background-color: rgba(255,255,255,0.07); */
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+::placeholder {
+    color: #e5e5e5;
+}
+
+button {
+    margin-top: 50px;
+    width: 100%;
+    background-color: #ffffff;
+    color: #ffffff;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none !important;
+    border: none;
+    background: 0 0;
+    background-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
+    background-position-x: 0px;
+    background-position-y: 0px;
+    background-size: initial;
+    background-repeat: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+
+}
+
+.button-upload {
+    border: none;
+    display: flex;
+    padding: 0.75rem 1.5rem;
+    background-color: #488aec;
+    color: #ffffff;
+    width: fit-content;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: middle;
+    align-items: center;
+    border-radius: 0.5rem;
+    user-select: none;
+    gap: 0.75rem;
+    box-shadow: 0 4px 6px -1px #488aec31, 0 2px 4px -1px #488aec17;
+    transition: all .6s ease;
+}
+
+.button-upload:hover {
+    box-shadow: 0 10px 15px -3px #488aec4f, 0 4px 6px -2px #488aec17;
+}
+
+.button-upload:focus,
+button:active {
+    opacity: .85;
+    box-shadow: none;
+}
+
+.button-upload svg {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+.button-logout {
+    --black: #000000;
+    --ch-black: #141414;
+    --eer-black: #1b1b1b;
+    --night-rider: #2e2e2e;
+    --white: #ffffff;
+    --af-white: #f3f3f3;
+    --ch-white: #e1e1e1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition-duration: .3s;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+    background-color: var(--night-rider);
+}
+
+/* plus sign */
+.sign {
+    width: 100%;
+    transition-duration: .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sign svg {
+    width: 17px;
+}
+
+.sign svg path {
+    fill: var(--af-white);
+}
+
+/* text */
+.text {
+    position: absolute;
+    right: 0%;
+    width: 0%;
+    opacity: 0;
+    color: var(--af-white);
+    font-size: 1.2em;
+    font-weight: 600;
+    transition-duration: .3s;
+}
+
+/* hover effect on button width */
+.button-logout:hover {
+    width: 125px;
+    border-radius: 5px;
+    transition-duration: .3s;
+}
+
+.button-logout:hover .sign {
+    width: 30%;
+    transition-duration: .3s;
+    padding-left: 20px;
+}
+
+/* hover effect button's text */
+.button-logout:hover .text {
+    opacity: 1;
+    width: 70%;
+    transition-duration: .3s;
+    padding-right: 10px;
+}
+
+/* button click effect*/
+.button-logout:active {
+    transform: translate(2px, 2px);
+}
+
+.button-container {
+    display: flex;
+    gap: 20px;
+}
+
+.button-home {
+    padding: 15px 25px;
+    border: unset;
+    border-radius: 15px;
+    color: #212121;
+    z-index: 1;
+    background: #e8e8e8;
+    position: relative;
+    font-weight: 1000;
+    font-size: 17px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    transition: all 250ms;
+    overflow: hidden;
+    width: fit-content;
+}
+
+.button-home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    background-color: #212121;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    transition: all 250ms
+}
+
+.button-home:hover {
+    color: #e8e8e8;
+}
+
+.button-home:hover::before {
+    width: 100%;
+}
+
+.custom-file-input {
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+    width: max-content;
+}
+
+.custom-file-label {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    background-color: #007bff;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 200px;
+}
+
+.custom-file-label:hover {
+    background-color: #0056b3;
+}
+
+
+.button-continue {
+    cursor: pointer;
+    font-weight: 700;
+    font-family: Helvetica, "sans-serif";
+    color: #000000;
+    transition: all .2s;
+    padding: 10px 20px;
+    border-radius: 100px;
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    cursor: pointer;
+    outline: none !important;
+    border: none;
+    background: 0 0;
+    width: fit-content;
+    background-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
+    background-position-x: 0px;
+    background-position-y: 0px;
+    background-size: initial;
+    background-repeat: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+}
+
+.button-continue:hover {
+    background: 144deg, #AF40FF, #5B42F3 50%, #00DDEB;
+}
+
+.button-continue>svg {
+    width: 34px;
+    margin-left: 10px;
+    transition: transform .3s ease-in-out;
+}
+
+.button-continue:hover svg {
+    transform: translateX(5px);
+}
+
+.button-continue:active {
+    transform: scale(0.95);
+}
+
+.file-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.file-link {
+    flex-grow: 1;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #007bff;
+}
+
+.delete-form {
+    display: flex;
+    align-items: center;
+    height: fit-content;
+    width: fit-content;
+}
+
+.button-delete {
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background: #e62222;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+    margin: 0;
+}
+
+.button-delete,
+.button-delete span {
+    transition: 200ms;
+}
+
+.button-delete .text-delete {
+    transform: translateX(35px);
+    color: white;
+    font-weight: bold;
+}
+
+.button-delete .icon {
+    position: absolute;
+    border-left: 1px solid #c41b1b;
+    transform: translateX(110px);
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-delete svg {
+    width: 15px;
+    fill: #eee;
+}
+
+.button-delete:hover {
+    background: #ff3636;
+}
+
+.button-delete:hover .text-delete {
+    color: transparent;
+}
+
+.button-delete:hover .icon {
+    width: 150px;
+    border-left: none;
+    transform: translateX(0);
+}
+
+.button-delete:focus {
+    outline: none;
+}
+
+.button-delete:active .icon svg {
+    transform: scale(0.8);
 }

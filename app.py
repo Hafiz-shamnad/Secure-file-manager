@@ -13,7 +13,7 @@ UPLOAD_FOLDER = 'uploads'
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 # Replace 'your_secret_key_here' with your actual secret key
-SECRET_KEY = "your_secret_key_here" 
+SECRET_KEY = "rIy6DXBU5MqJj6HrKix2MuzkG25SXNfjBsGwSvFZw0Y=" 
 cipher = Fernet(SECRET_KEY)
 
 # Ensure the upload directory exists
